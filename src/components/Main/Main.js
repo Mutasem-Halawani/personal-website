@@ -1,7 +1,7 @@
 import React from "react"
-import About from './main-sections/About'
-import Work from './main-sections/Work'
-import Contact from './main-sections/Contact'
+import About from './components/About'
+import Work from './components/Work'
+import Contact from './components/Contact/Contact'
 
 function Main(props) {
   return (

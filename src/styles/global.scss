@@ -1,6 +1,16 @@
+@import' https://use.fontawesome.com/releases/v5.7.2/css/all.css';
+@import' https://use.fontawesome.com/releases/v5.7.2/css/v4-shims.css';
+
+$color-main: rgb(100, 92, 159);
+$color-2nd: #eed102;
+$color-3rd: rgb(36, 1, 47);
+$color-4th: #08c5d1;
+$color-text: white;
+$radious-project: 3px;
 
 html {
-  background-color: lavenderblush;
+  background-color: $color-3rd;
+  color: $color-2nd;
   font-size: 10px;
 }
 
@@ -11,23 +21,122 @@ body {
 .article {
   position: relative;
   margin: 1rem;
+  padding: 1rem;
   width: 33%;
-  display: flex !important;
-  align-items: center;
   justify-content: center;
-  border-radius: 1.2rem;
-  height: 13rem;
-  background-color: red;
+  border-radius: $radious-project;
+  height: 14rem;
+  background-color: $color-3rd;
+  color: $color-2nd;
+  background: linear-gradient(to bottom, rgba(100, 92, 159, 1) 0%,rgba(36, 1, 47, 1) 100%); 
 
   &__title {
     position: relative;
     z-index: 1;
   }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: $radious-project;
+    transition: opacity 0.35s;
+  }
+
+  &__wrapper {
+    text-align: center;
+    color: $color-2nd;
+    z-index: 2;
+    
+    &--on-hover {
+      z-index: 3;
+      position: absolute;
+      bottom: 0.8rem;
+      opacity: 0;
+      transition: all 0.35s;
+      transform: translate3d(0,-30%,0);
+    }
+  }
+
+  &__desc {
+    color: $color-text;
+    padding-bottom: 0.5rem;
+  }
+  
+  &::after {
+    top: 110px;
+    position: absolute;
+    width: 95%;
+    // bottom: 30px;
+    left: 8px;
+    height: calc(50% - 30px);
+    height: 100px;
+    border: $radious-project solid #fff;
+    border-radius: $radious-project;
+    content: '';
+    transition: all 0.35s;
+    transform: translate3d(0,-100%,0);
+  }
+
+
+  &:hover {
+    &::after {
+      transform: translate3d(0,23%,0);
+    }
+
+    .article__wrapper--on-hover {
+      opacity: 1;
+      transform: translate3d(0,-20%,0);
+    }
+
+    .article__img {
+      opacity: 0.2;
+    }
+  }
+}
+
+.link {
+  padding: 0.5rem;
+  color: $color-main;
+  background-color: $color-text;
+  border-radius: $radious-project;
+  text-decoration: none;
+
+  &--project {
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin: 0.5rem;
+      margin-left: 0.2rem;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      & > .icon {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-2nd !important;
 }
 
 h3 {
   margin: 0 !important;
   padding: 0.5rem 0 !important;
+}
+
+p {
+  color: $color-text;
 }
 
 p, img {
@@ -49,6 +158,7 @@ textarea {
   position: sticky;
   top: 0;
   padding: 1rem 2rem;
+  z-index: 1;
 
   &__wrapper {
     text-align: right;
@@ -73,11 +183,12 @@ textarea {
 }
 
 .main {
+  color: $color-text;
+  
   &__row {
     display: flex;
   }
   &__section {
-    background-color: lightblue;
     padding: 2rem;
     padding-top: 5rem;
 
@@ -85,16 +196,18 @@ textarea {
       padding: 0.5rem 0;
     }
   }
-  
-  &__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 1.2rem;
+
+  .availability {
+    &__wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__card {
+      height: 30rem;
+      width: 20rem;
+      background-color: $color-2nd;
+    }
   }
 }
 
