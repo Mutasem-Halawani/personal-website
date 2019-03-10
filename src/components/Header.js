@@ -5,9 +5,9 @@ import Typist from 'react-typist'
 
 function Header(props) {
   return (
-    <header className="header TypistExample-content">
+    <header className="header">
       <Typist
-        className="TypistExample-message"
+        className="header__typist"
         cursor={{ hideWhenDone: true, blink: true }}
       >
         Hello!

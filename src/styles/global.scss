@@ -180,6 +180,10 @@ textarea {
 .header {
   height: 100vh;
   padding: 2rem;
+
+  &__typist {
+    color: white;
+  }
 }
 
 .main {

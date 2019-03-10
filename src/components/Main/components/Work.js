@@ -97,55 +97,55 @@ class Work extends React.Component {
 
 	render(){
 		return (
-			<section className="main__section" id="work">
-				<h2>
-					Production
-				</h2>
-				{/* <div className="main__row"> */}
-					{projects.map((project, i) => {
-						const rows = [
+			// <section className="main__section" id="work">
+			// 	<h2>
+			// 		Production
+			// 	</h2>
+			// 	<div className="main__row">
+			// 		{projects.map((project, i) => {
+			// 			const rows = [
 							
-						]
-						if (projects.indexOf(project) === 0) {
-							rows.push(
-								'<div className="main__row">'
-							)
-						}
-						rows.push(
-							<Project
-								key={i}
-								title={project.title}
-								desc={project.desc}
-								website={project.website}
-								img={project.img}>
-							</Project>
-						)
-						if ()
-						if ((projects.indexOf(project) % 3) === 2)  {
-							rows.push(
-								'</div><div className="main__row">'
-							)
-							console.log('third item')
-						}
-					return rows
-					})}
-					<br/>
-					<br/>
-					<br/>
-					<br/>
-					{sideProjects.map((project, i) => {
-					 return (
-						 <Project
-							key={i}
-							title={project.title}
-							desc={project.desc}
-							website={project.website}
-							img={project.img}>
-						</Project>
-					)
-					})}
-				{/* </div> */}
-				{/* <div className="main__row">
+			// 			]
+			// 			if (projects.indexOf(project) === 0) {
+			// 				rows.push(
+			// 					'<div className="main__row">'
+			// 				)
+			// 			}
+			// 			rows.push(
+			// 				<Project
+			// 					key={i}
+			// 					title={project.title}
+			// 					desc={project.desc}
+			// 					website={project.website}
+			// 					img={project.img}>
+			// 				</Project>
+			// 			)
+			// 			if ((projects.indexOf(project) % 3) === 2)  {
+			// 				rows.push(
+			// 					'</div><div className="main__row">'
+			// 				)
+			// 				console.log('third item')
+			// 			}
+			// 		return rows
+			// 		})}
+			// 		<br/>
+			// 		<br/>
+			// 		<br/>
+			// 		<br/>
+			// 		{sideProjects.map((project, i) => {
+			// 		 return (
+			// 			 <Project
+			// 				key={i}
+			// 				title={project.title}
+			// 				desc={project.desc}
+			// 				website={project.website}
+			// 				img={project.img}>
+			// 			</Project>
+			// 		)
+			// 		})}
+			// 	</div>
+			<section className="main__section" id="work">
+				<div className="main__row">
 					<Project
 						title="Bridge to europe"
 						desc="a website for bridge to europe"
@@ -251,7 +251,7 @@ class Work extends React.Component {
 						img="../parser.jpg"
 						title="Request Header Parser Microservice API">
 					</Project>
-				</div> */}
+				</div>
 				</section>
 		)
 	}
