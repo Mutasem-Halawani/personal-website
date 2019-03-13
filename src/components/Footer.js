@@ -7,7 +7,7 @@ function Footer(props) {
       <div className="footer__wrapper">
         <p>
           Built using
-          <a className="footer__link" href="https://www.gatsbyjs.org/">
+          <a className="footer__link link" href="https://www.gatsbyjs.org/">
             Gatsby
           </a>
         </p>

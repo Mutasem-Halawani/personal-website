@@ -15,6 +15,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "d3": "^5.9.1",
     "gatsby": "^2.0.118",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-typography": "^2.2.7",
@@ -23,9 +24,11 @@
     "npm": "^6.8.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "react-svg-textures": "^1.4.7",
     "react-transition-group": "^2.6.0",
     "react-typist": "^2.0.5",
     "react-typography": "^0.16.18",
+    "textures": "^1.2.0",
     "typography": "^0.16.18"
   },
   "repository": {

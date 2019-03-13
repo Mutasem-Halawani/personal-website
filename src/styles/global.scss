@@ -1,16 +1,13 @@
 @import' https://use.fontawesome.com/releases/v5.7.2/css/all.css';
 @import' https://use.fontawesome.com/releases/v5.7.2/css/v4-shims.css';
 
-$color-main: rgb(100, 92, 159);
-$color-2nd: #eed102;
-$color-3rd: rgb(36, 1, 47);
-$color-4th: #08c5d1;
-$color-text: white;
+$color-main: rgba(238, 209, 2, 1);
+$color-base: white;
+$color-secondary: black;
 $radious-project: 3px;
 
 html {
-  background-color: $color-3rd;
-  color: $color-2nd;
+  background-color: $color-base;
   font-size: 18px;
 }
 
@@ -26,13 +23,16 @@ body {
   justify-content: center;
   border-radius: $radious-project;
   height: 14rem;
-  background-color: $color-3rd;
-  color: $color-2nd;
-  background: linear-gradient(to bottom, rgba(100, 92, 159, 1) 0%,rgba(36, 1, 47, 1) 100%); 
+  color: $color-secondary;
+  background: linear-gradient(to bottom, $color-main 0%,$color-main 100%); 
 
   &__title {
     position: relative;
     z-index: 1;
+  }
+
+  &__link {
+    color: $color-secondary;
   }
 
   &__img {
@@ -49,7 +49,6 @@ body {
 
   &__wrapper {
     text-align: center;
-    color: $color-2nd;
     z-index: 2;
     
     &--on-hover {
@@ -63,7 +62,7 @@ body {
   }
 
   &__desc {
-    color: $color-text;
+    color: $color-secondary;
     padding-bottom: 0.5rem;
   }
   
@@ -71,7 +70,6 @@ body {
     top: 110px;
     position: absolute;
     width: 95%;
-    // bottom: 30px;
     left: 8px;
     height: calc(50% - 30px);
     height: 100px;
@@ -101,10 +99,8 @@ body {
 
 .link {
   padding: 0.5rem;
-  color: $color-main;
-  background-color: $color-text;
   border-radius: $radious-project;
-  text-decoration: none;
+  // text-decoration: none;
 
   &--project {
     background: transparent;
@@ -126,17 +122,13 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $color-2nd !important;
-}
-
 h3 {
   margin: 0 !important;
   padding: 0.5rem 0 !important;
 }
 
 p {
-  color: $color-text;
+  color: $color-secondary;
 }
 
 p, img {
@@ -166,6 +158,7 @@ textarea {
 
   &__link {
     margin: 0 0.5rem;
+    color: $color-secondary;
 
     &:first-child {
       margin-left: 0;
@@ -177,17 +170,32 @@ textarea {
   }
 }
 
-.header {
-  height: 100vh;
-  padding: 2rem;
+.header-wrapper {
 
-  &__typist {
-    color: white;
+  .header {
+    height: 100vh;
+    padding: 2rem;
+    z-index: 1;
+    position: relative;
+  
+    &__typist {
+      color: $color-secondary;
+    }
+  }
+  
+  .svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 
 .main {
-  color: $color-text;
+  color: $color-secondary;
   
   &__row {
     display: flex;
@@ -210,7 +218,7 @@ textarea {
     &__card {
       height: 30rem;
       width: 20rem;
-      background-color: $color-2nd;
+      background-color: $color-main;
     }
   }
 }
@@ -220,6 +228,7 @@ textarea {
   
   &__link {
     padding: 0 0.5rem;
+    color: $color-secondary;
   }
 
   &__nav {
@@ -232,3 +241,5 @@ textarea {
     align-items: center;
   }
 }
+
+
