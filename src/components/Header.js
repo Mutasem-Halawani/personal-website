@@ -6,16 +6,16 @@ import Typist from 'react-typist'
 const Texture = () => (
   <svg className="svg svg__header">
     <Lines
-      id='pattern'
+      id='headerPattern'
       d='woven'
-      stroke='yellow'
+      stroke='gray'
       strokeWidth={2}
       orientation='vertical'
       size={7}
       shapeRendering='circle'
-      background='blue'
+      background='black'
     />
-    <circle cx='50%' cy='90%' r='100%' fill='url(#pattern)' />
+    <circle cx='50%' cy='90%' r='100%' fill='url(#headerPattern)' />
   </svg>
 );
 function Header(props) {
