@@ -1,8 +1,10 @@
 import React from "react"
-// const words = [' Hello!', 'My name is Motasem', 'I\'m a fullstack web developer']
 import Lines from "react-svg-textures/es/Paths"
-import Typist from 'react-typist'
+import Typed from 'react-typed'
 
+/**
+ * {@link https://github.com/mattboldt/typed.js}
+ */
 const Texture = () => (
   <svg className="svg svg__header">
     <Lines
@@ -25,21 +27,29 @@ function Header(props) {
     <Texture>
     </Texture>
     <header className="header">
-      <Typist
-        className="header__typist"
-        cursor={{ hideWhenDone: true, blink: true }}
-      >
-        Hello!
-        <Typist.Backspace count={6} delay={1000} />
-        <Typist.Delay ms={1250} />
-        My name is Motasem
-        <Typist.Backspace count={18} delay={1000} />
-        <Typist.Delay ms={1250} />
-        I'm a fullstack web developer
-        <Typist.Backspace count={30} delay={1000} />
-        <Typist.Delay ms={1250} />
-      </Typist>
-     
+      <div className="header__welcome">
+        <Typed
+            strings={['Hello!', 'Welcome to my page.', 'Motasem']} 
+            typeSpeed={70} 
+            backSpeed={40} 
+            showCursor={false}
+        />
+      </div>
+      <div className="header__title">
+        <Typed
+          strings={[
+            'Developer',
+            'Entrepreneur',
+            'Online Marketer'
+          ]}
+          startDelay={8000}
+          typeSpeed={60}
+          backSpeed={80} 
+          attr="placeholder"
+          loop >
+          <input className="header__input" type="text"/>
+        </Typed>
+      </div>
     </header>
     </div>
    

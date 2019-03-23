@@ -21,8 +21,8 @@ function Work(props) {
 					Send
 				</button>
 			</form>
-			<Availability>
-			</Availability>
+			{/* <Availability>
+			</Availability> */}
 		</section>
   )
 }

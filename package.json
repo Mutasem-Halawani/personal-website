@@ -26,7 +26,7 @@
     "react-dom": "^16.8.0",
     "react-svg-textures": "^1.4.7",
     "react-transition-group": "^2.6.0",
-    "react-typist": "^2.0.5",
+    "react-typed": "^1.1.2",
     "react-typography": "^0.16.18",
     "textures": "^1.2.0",
     "typography": "^0.16.18"

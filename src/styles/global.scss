@@ -8,6 +8,7 @@ $color-main: lightgray;
 $color-base: white;
 $color-secondary: white;
 $radious-project: 3px;
+$gradient: linear-gradient(to bottom right,#002f4b,#dc4225);
 
 html {
   background-color: $color-base;
@@ -34,7 +35,7 @@ body, p, a, h1, h2, h3, h4, h5, h6, span {
   border-radius: $radious-project;
   height: 20rem;
   color: $color-secondary;
-  background: linear-gradient(to bottom, $color-main 0%,$color-main 100%); 
+  background: $gradient; 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -46,6 +47,17 @@ body, p, a, h1, h2, h3, h4, h5, h6, span {
 
   &__link {
     color: $color-secondary;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: $gradient;
+    opacity: .4; 
   }
 
   &__img {
@@ -198,11 +210,16 @@ p, img {
     font-size: 5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 100%;
   
-    &__typist {
-      color: $color-secondary;
+    &__input {
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+
+    &__welcome {
+      margin-right: 0.5rem;
     }
   }
 }
@@ -216,6 +233,7 @@ p, img {
   #contact {
     background-color: black;
     text-align: center;
+    height: 100vh;
 
     .text {
       width: 800px;
@@ -326,7 +344,6 @@ p, img {
       align-items: center;
     }
 
-    /* Effect 1 */
     .nav__link {
       background: rgba(236, 241, 243, 0.1);
       transition: all 0.2s;
@@ -365,7 +382,6 @@ p, img {
       box-sizing: content-box;
     }
 
-    /* Effect 1a */
     .nav__link:hover {
       background: rgba(255,255,255,1);
       color: black;
@@ -405,8 +421,8 @@ p, img {
   padding: 10px 20px;
 }
 
-  .box-effect::before,
-  .box-effect::after  {
+.box-effect::before,
+.box-effect::after  {
   position: absolute;
   top: 0;
   left: 0;
@@ -419,7 +435,7 @@ p, img {
   transition: transform 0.3s, opacity 0.3s;
 }
 
-  .box-effect::after  {
+.box-effect::after  {
   border-color: #fff;
   opacity: 0;
   -webkit-transform: translateY(-7px) translateX(6px);
@@ -427,16 +443,16 @@ p, img {
   transform: translateY(-7px) translateX(6px);
 }
 
-  .box-effect:hover::before,
-  .box-effect:focus::before {
+.box-effect:hover::before,
+.box-effect:focus::before {
   opacity: 0;
   -webkit-transform: translateY(5px) translateX(-5px);
   -moz-transform: translateY(5px) translateX(-5px);
   transform: translateY(5px) translateX(-5px);
 }
 
-  .box-effect:hover::after,
-  .box-effect:focus::after  {
+.box-effect:hover::after,
+.box-effect:focus::after  {
   opacity: 1;
   -webkit-transform: translateY(0px) translateX(0px);
   -moz-transform: translateY(0px) translateX(0px);
