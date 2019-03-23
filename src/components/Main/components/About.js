@@ -20,10 +20,10 @@ const Texture = () => (
 function About(props) {
   return (
 	<div className="about-wrapper">
-	<Texture>
-    </Texture>
+	{/* <Texture>
+    </Texture> */}
 		<section className="main__section" id="about">
-				<div>
+				<div className="container">
 					<h2>
 						Technologies I use:
 					</h2>

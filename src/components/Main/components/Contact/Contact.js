@@ -3,7 +3,8 @@ import Availability from "./Availability"
 
 function Work(props) {
   return (
-		<section className="main__section" id="contact">
+	  <div className="contact-container">
+		<section className="main__section container" id="contact">
 			<h3>
 				Get in touch
 			</h3>
@@ -24,6 +25,7 @@ function Work(props) {
 			{/* <Availability>
 			</Availability> */}
 		</section>
+	</div>
   )
 }
 

@@ -10,7 +10,7 @@ const Texture = () => (
     <Lines
       id='headerPattern'
       d='woven'
-      stroke='gray'
+      stroke='#002f4b'
       strokeWidth={2}
       orientation='vertical'
       size={7}
@@ -34,17 +34,16 @@ class Header extends React.Component {
       <div className="header-wrapper">
       <Texture>
       </Texture>
-      <header className="header">
+      <header className="header container">
         <div className="header__welcome">
           <Typed
-              strings={['Hello!', 'Welcome to my page.', 'Motasem']} 
-              typeSpeed={70} 
-              backSpeed={40} 
-              showCursor={false}
-              onComplete={() => { this.setState({delay: 0}) }}
+            strings={['Hello!', 'Welcome to my page.', 'Motasem']} 
+            typeSpeed={70} 
+            backSpeed={40} 
+            showCursor={false}
+            onComplete={() => { this.setState({delay: 0}) }}
           />
-          
-             <Typed
+          <Typed
             strings={[
               'Developer',
               'Entrepreneur',

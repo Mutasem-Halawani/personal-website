@@ -24,7 +24,7 @@ function Footer(props) {
       <Texture>
       </Texture>
       <footer className="footer">
-        <div className="footer__wrapper">
+        <div className="footer__wrapper container">
           <p>
             Built using
             <a target="_blank" className="footer__link link" href="https://www.gatsbyjs.org/">
