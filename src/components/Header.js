@@ -43,6 +43,7 @@ class Header extends React.Component {
               showCursor={false}
               onComplete={() => { this.setState({delay: 0}) }}
           />
+          
              <Typed
             strings={[
               'Developer',
