@@ -1,27 +1,8 @@
 import React from "react"
-import Lines from "react-svg-textures/es/Paths"
-
-const Texture = () => (
-	<svg className="svg">
-	  <Lines
-		id='pattern'
-		d='woven'
-		stroke='gray'
-		strokeWidth={1}
-		orientation='vertical'
-		size={20}
-		shapeRendering='circle'
-		background='black'
-	  />
-	  <circle cx='50%' cy='90%' r='100%' fill='url(#pattern)' />
-	</svg>
-  );
   
 function About(props) {
   return (
 	<div className="about-wrapper">
-	{/* <Texture>
-    </Texture> */}
 		<section className="main__section" id="about">
 				<div className="container">
 					<h2>

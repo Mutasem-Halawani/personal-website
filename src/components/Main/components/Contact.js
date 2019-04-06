@@ -1,5 +1,4 @@
 import React from "react"
-import Availability from "./Availability"
 
 function Work(props) {
   return (
@@ -22,8 +21,6 @@ function Work(props) {
 					Send
 				</button>
 			</form>
-			{/* <Availability>
-			</Availability> */}
 		</section>
 	</div>
   )

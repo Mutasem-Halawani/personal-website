@@ -1,12 +1,11 @@
 import React from "react"
 import About from './components/About'
 import Work from './components/Work'
-import Contact from './components/Contact/Contact'
+import Contact from './components/Contact'
 
 function Main(props) {
   return (
 		<div className="main-wrapper">
-		
 			<main className="main">
 				<About>
 				</About>

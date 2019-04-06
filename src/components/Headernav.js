@@ -12,7 +12,7 @@ function Headernav(props) {
 						About
 					</a>
 					<a className="nav__link box-effect link" href="#work">
-						Work
+						Projects
 					</a>
 					<a className="nav__link box-effect link" href="#contact">
 						Contact

@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 // TODO: replace font awesome for production
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIgloo } from '@fortawesome/free-solid-svg-icons'
-import { Lines } from 'react-svg-textures'
 
 library.add(faIgloo)
 
@@ -20,8 +19,6 @@ export default () => (
     </Main>
     <Footer>
     </Footer>
-    
-    
   </div>
 )
 

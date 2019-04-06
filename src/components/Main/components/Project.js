@@ -5,8 +5,6 @@ class Project extends React.Component {
 	render(){
 		return (
 			<article className="article" style={{backgroundImage: `url(${this.props.img})` }}>
-					{/* <img className="article__img" src={this.props.img}/> */}
-					
 					<h3 className="article__title">
 						{this.props.title}
 					</h3>

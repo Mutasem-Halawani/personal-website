@@ -1,5 +1,4 @@
 import React from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Lines from "react-svg-textures/es/Paths"
 
 const Texture = () => (
