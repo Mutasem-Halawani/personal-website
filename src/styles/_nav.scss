@@ -1,0 +1,26 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    padding: 1rem 2rem;
+    z-index: 3;
+  
+    &__wrapper {
+      text-align: right;
+    }
+  
+    &__link {
+      margin: 0 0.5rem;
+      color: $color-text;
+  
+      &:first-child {
+        margin-left: 0;
+      }
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+

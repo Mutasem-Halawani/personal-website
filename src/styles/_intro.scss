@@ -1,0 +1,27 @@
+
+.header-wrapper {
+    height: 100vh;
+    position: relative;
+  
+    .header {
+  
+      padding: 2rem;
+      z-index: 1;
+      position: relative;
+      font-size: 5rem;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    
+      &__input {
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+  
+      &__welcome {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  

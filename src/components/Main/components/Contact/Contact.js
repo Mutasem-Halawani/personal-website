@@ -9,7 +9,7 @@ function Work(props) {
 				Get in touch
 			</h3>
 			<p className="text">
-				* Whether you need a personal website, a CRM website, E-commerce, or a single page application.
+				Message me! Let's turn ideas into reality, and build great things!
 			</p>
 			<form className="form">
 				<div className="form__input-wrapper">

@@ -1,0 +1,30 @@
+
+html {
+    background-color: $color-text;
+    font-size: 18px;
+    scroll-behavior: smooth;
+    font: 112.5%/1.666 'Montserrat', sans-serif !important;
+}
+  
+body {
+    font-size: 1rem;
+}
+
+body, p, a, h1, h2, h3, h4, h5, h6, span {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+h3 {
+    margin: 0 !important;
+    padding: 0.5rem 0 !important;
+  }
+  
+p {
+    color: $color-text;
+    margin: 0 !important;
+}
+
+img {
+    margin: 0 !important;
+}
