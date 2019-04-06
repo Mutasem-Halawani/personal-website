@@ -1,8 +1,17 @@
+@import 'mixins';
+
 .about-wrapper {
     position: relative;
-    height: 100vh;
+    background-color: $color-base;
+}
 
-    #about {
-      background-color: $color-base;
+#about {
+    height: 100vh;
+    flex-flow: column wrap;
+    display: flex;
+    justify-content:center;
+
+    @include mobile {
+        height: auto;
     }
-  }
+}

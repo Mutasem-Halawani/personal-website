@@ -1,9 +1,8 @@
+@import 'mixins';
 
 .article {
     position: relative;
-    margin: 1rem;
     padding: 1rem;
-    width: 33%;
     justify-content: center;
     border-radius: $radious-project;
     height: 20rem;
@@ -12,6 +11,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    margin-bottom: 1.5rem;
+    
+    @include mobile {
+        margin-bottom: 1rem;
+    }
   
     &__title {
       position: relative;
@@ -56,6 +60,10 @@
         opacity: 0;
         transition: all 0.35s;
         transform: translate3d(0,-30%,0);
+        
+        @include mobile {
+            opacity: 1;
+        }
       }
     }
   
@@ -63,20 +71,27 @@
       color: $color-text;
       padding-bottom: 0.5rem;
     }
-    
+
   
     &:hover {
       &::after {
         transform: translate3d(0,23%,0);
+        @include mobile {
+            transform: translate3d(0,-30%,0);
+        }
       }
   
       .article__wrapper--on-hover {
         opacity: 1;
         transform: translate3d(0,-20%,0);
+        @include mobile {
+            transform: translate3d(0,-30%,0);
+        }
       }
   
       .article__img {
         opacity: 0.2;
       }
     }
+
   }

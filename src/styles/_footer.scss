@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .footer-wrapper {
     position: relative;
@@ -6,7 +7,7 @@
       padding: 1rem 2rem;
       z-index: 1;
       position: relative;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     
       &__link {
         padding: 0 0.5rem;
@@ -16,12 +17,20 @@
     
       &__nav {
         padding: 0 !important;
+
+        @include mobile {
+            margin-bottom: 0.5rem;
+        }
       }
     
       &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
       }
   
       .nav__link {
@@ -29,12 +38,12 @@
         transition: all 0.2s;
         border-radius: 50%;
         padding: 1rem;
-        width: 70px;
+        width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        height: 70px;
         position: relative;
       }
   

@@ -3,8 +3,7 @@ import React from "react"
 function About(props) {
   return (
 	<div className="about-wrapper">
-		<section className="main__section" id="about">
-				<div className="container">
+		<section className="main__section container" id="about">
 					<h2>
 						Technologies I use:
 					</h2>
@@ -60,7 +59,6 @@ function About(props) {
 							</div>
 						</div>
 					</div>
-				</div>
 		</section>
 	</div>
   )

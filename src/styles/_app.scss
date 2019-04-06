@@ -15,24 +15,13 @@
 }
   
 .main {
-    color: $color-text;
-    z-index: 1;
-    position: relative;
-  
-    &__row {
-      display: flex;
-      margin: 0 -21px;
-    }
-  
     &__section {
-      position: relative;
-      z-index: 1;
-      padding: 6rem 0 0 2rem;
-  
-      &__wrapper {
-        padding: 0.5rem 0;
-      }
+        position: relative;
+        z-index: 1;
+        padding: 6rem 2rem 0 2rem;
+
+        &__wrapper {
+            padding: 0.5rem 0;
+        }
     }
-  }
-  
-  
+}

@@ -1,0 +1,25 @@
+#work {
+    h2 {
+        color: black;
+    }
+    .separator {
+        height: 5rem;
+    }
+}
+
+.main {
+    color: $color-text;
+    z-index: 1;
+    position: relative;
+  
+    &__row {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    &__section {
+        .container {
+            padding: 0;
+        }
+    }
+  }

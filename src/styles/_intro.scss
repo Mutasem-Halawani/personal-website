@@ -1,3 +1,4 @@
+@import 'mixins';
 
 .header-wrapper {
     height: 100vh;
@@ -12,15 +13,28 @@
       display: flex;
       align-items: center;
       height: 100%;
+
+      @include mobile {
+        font-size: 1.6rem;
+      }
     
       &__input {
         background: transparent;
-        border: none;
+        border: 2px solid $color-text;
+        color: $color-text;
+        width: 100%;
         outline: none;
+        padding: 1rem;
       }
   
       &__welcome {
-        margin-right: 0.5rem;
+          span {
+            padding: 1rem;
+
+            @include mobile {
+                padding: 0;
+            }
+          }
       }
     }
   }

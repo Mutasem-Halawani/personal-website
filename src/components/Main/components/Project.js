@@ -4,6 +4,7 @@ class Project extends React.Component {
 
 	render(){
 		return (
+		<div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
 			<article className="article" style={{backgroundImage: `url(${this.props.img})` }}>
 					<h3 className="article__title">
 						{this.props.title}
@@ -18,6 +19,7 @@ class Project extends React.Component {
 						</a>
 					</div>
 			</article>
+		</div>
 
 		)
 	}

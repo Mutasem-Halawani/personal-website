@@ -13,9 +13,11 @@ class Work extends React.Component {
 
 	render(){
 		return (
-			<div className="container">
 				<section className="main__section container" id="work">
-					<div className="main__row">
+					<h2>
+						Production:
+					</h2>
+					<div className="main__row row">
 						<Project
 							title="Bridge to europe"
 							desc="a website for bridge to europe"
@@ -34,8 +36,8 @@ class Work extends React.Component {
 							website="https://members.nli.org.il"
 							img="https://images.unsplash.com/photo-1471439330580-1493ebc92c13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
 						</Project>
-					</div>
-					<div className="main__row">
+					{/* </div>
+					<div className="main__row row"> */}
 						<Project
 							title="20 years of web"
 							desc="An interactive platform and exhibition of 20 years of web"
@@ -55,21 +57,18 @@ class Work extends React.Component {
 							desc="">
 						</Project>
 					</div>
-					<br/>
-					<br/>
-					<br/>
-					<br/>
+				 	<div className="separator">
+					</div>
 					<h2>
-						Just for the fun of it
+						Just for the fun of it:
 					</h2>
-					<div className="main__row">
+					<div className="main__row row">
 						<Project 
 							title="Contacts Manager"
 							website="https://contacts-manager-1edd4.firebaseapp.com"
 							img="https://images.unsplash.com/photo-1535966516242-f835d6de428a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
 							desc="A app to manage your contacts">
 						</Project>
-
 						<Project 
 							title="Calculator"
 							website="https://mutasem-halawani.github.io/Javascript-Calculator/"
@@ -83,8 +82,6 @@ class Work extends React.Component {
 							img="https://images.unsplash.com/photo-1547482926-5dbb3eb7300f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
 							desc="Twitch selected channels online/offline">
 						</Project>
-					</div>
-					<div className="main__row">
 						<Project 
 							website="https://mutasem-halawani.github.io/WikipediaViewer/"
 							img="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
@@ -102,8 +99,6 @@ class Work extends React.Component {
 							img="https://images.unsplash.com/photo-1522120691812-dcdfb625f397?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
 							title="Random Quote Machine">
 						</Project>
-					</div>
-					<div className="main__row">
 						<Project 
 							website="https://image-search-abs-layer-fcc.herokuapp.com/"
 							img="https://images.unsplash.com/photo-1501681506726-610246d81ade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
@@ -122,8 +117,7 @@ class Work extends React.Component {
 							title="Request Header Parser Microservice API">
 						</Project>
 					</div>
-					</section>
-				</div>
+				</section>
 		)
 	}
 }

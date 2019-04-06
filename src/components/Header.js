@@ -25,7 +25,7 @@ class Header extends React.Component {
   constructor() {
     super()
     this.state = {
-      delay: 8000
+      delay: 800
     }
   }
 
@@ -37,7 +37,7 @@ class Header extends React.Component {
       <header className="header container">
         <div className="header__welcome">
           <Typed
-            strings={['Hello!', 'Welcome to my page.', 'Motasem']} 
+            strings={['Motasem']} 
             typeSpeed={70} 
             backSpeed={40} 
             showCursor={false}
