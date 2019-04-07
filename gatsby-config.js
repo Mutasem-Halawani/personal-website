@@ -5,6 +5,7 @@ module.exports = {
       description: ""
     },
     plugins: [
+        `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         {
             resolve: `gatsby-plugin-typography`,
