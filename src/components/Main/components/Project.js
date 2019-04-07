@@ -13,7 +13,11 @@ class Project extends React.Component {
 						<p className="article__desc">
 							{this.props.desc}
 						</p>
-						<a target="_blank" className="article__link link link--project" href={this.props.website}>
+						<a 
+							target="_blank" 
+							rel="noopener noreferrer"
+							className="article__link link link--project" 
+							href={this.props.website}>
 							Visit Website
 							<span className="arrow">
 								<i className="icon fa fa-angle-right"></i>

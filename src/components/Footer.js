@@ -10,22 +10,42 @@ function Footer(props) {
         <div className="footer__wrapper container">
           <p>
             Built using
-            <a target="_blank" className="footer__link link" href="https://www.gatsbyjs.org/">
-              Gatsby
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link link" 
+              href="https://www.gatsbyjs.org/">
+                Gatsby
             </a>
           </p>
           <nav className="nav footer__nav">
-            <a target="_blank" className="nav__link" href="https://github.com/Mutasem-Halawani">
-              <i className="icon fab fa-github"></i>
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav__link" 
+              href="https://github.com/Mutasem-Halawani">
+                <i className="icon fab fa-github"></i>
             </a>
-            <a target="_blank" className="nav__link" href="https://www.linkedin.com/in/motasem-halawani-5481b196/">
-              <i className="icon fab fa-linkedin-in"></i>
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav__link" 
+              href="https://www.linkedin.com/in/motasem-halawani-5481b196/">
+                <i className="icon fab fa-linkedin-in"></i>
             </a>
-            <a target="_blank" className="nav__link" href="https://twitter.com/MutasemHalawani">
-              <i className="icon fab fa-twitter"></i>
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav__link" 
+              href="https://twitter.com/MutasemHalawani">
+                <i className="icon fab fa-twitter"></i>
             </a>
-            <a target="_blank" className="nav__link" href="mailto:mtsmha@gmail.com">
-              <i className="icon fas fa-envelope"></i>
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav__link" 
+              href="mailto:mtsmha@gmail.com">
+                <i className="icon fas fa-envelope"></i>
             </a>
           </nav>
         </div>
