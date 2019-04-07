@@ -1,4 +1,4 @@
-@import 'mixins';
+@import './shared/mixins';
 
 .header-wrapper {
     height: 100vh;
@@ -16,6 +16,12 @@
 
       @include mobile {
         font-size: 1.6rem;
+      }
+
+      &__img {
+        position: absolute;
+        width: auto;
+        height: auto;
       }
     
       &__input {

@@ -1,17 +1,23 @@
-@import 'bootstrap';
-@import 'footer';
-@import 'variables';
-@import 'nav';
-@import 'base';
-@import 'intro';
-@import 'header';
-@import 'box-effect';
-@import 'cards';
-@import 'link';
-@import 'app';
-@import 'contact';
-@import 'fonts';
-@import 'about';
-@import 'work';
-@import 'mixins';
-@import 'header-nav';
+@import './vendor/bootstrap';
+
+@import './shared/variables';
+@import './shared/base';
+@import './shared/fonts';
+@import './shared/mixins';
+@import './shared/app';
+
+@import './partials/nav';
+@import './partials/box-effect';
+@import './partials/link';
+
+@import './modules/footer';
+@import './modules/header/intro';
+@import './modules/header/header';
+@import './modules/header/header-nav';
+@import './modules/cards';
+@import './modules/contact';
+@import './modules/about';
+@import './modules/work';
+
+
+
