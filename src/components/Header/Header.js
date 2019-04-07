@@ -1,25 +1,5 @@
 import React from "react"
-import Lines from "react-svg-textures/es/Paths"
 import Typed from 'react-typed'
-
-/**
- * {@link https://github.com/mattboldt/typed.js}
- */
-const Texture = () => (
-  <svg className="svg svg__header">
-    <Lines
-      id='headerPattern'
-      d='woven'
-      stroke='#002f4b'
-      strokeWidth={2}
-      orientation='vertical'
-      size={7}
-      shapeRendering='circle'
-      background='black'
-    />
-    <circle cx='50%' cy='90%' r='100%' fill='url(#headerPattern)' />
-  </svg>
-);
 class Header extends React.Component {
 
   constructor() {
@@ -32,8 +12,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header-wrapper">
-      <Texture>
-      </Texture>
+      <img className="header__img" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"/>
       <header className="header container">
         <div className="header__welcome">
           <Typed

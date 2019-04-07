@@ -5,16 +5,16 @@ import Contact from './components/Contact'
 
 function Main(props) {
   return (
-		<div className="main-wrapper">
-			<main className="main">
-				<About>
-				</About>
-				<Work>
-				</Work>
-				<Contact>
-				</Contact>
-			</main>
-		</div>
+	<div className="main-wrapper">
+		<main className="main">
+			<About>
+			</About>
+			<Work>
+			</Work>
+			<Contact>
+			</Contact>
+		</main>
+	</div>
   )
 }
 

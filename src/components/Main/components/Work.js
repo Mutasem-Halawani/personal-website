@@ -36,8 +36,6 @@ class Work extends React.Component {
 							website="https://members.nli.org.il"
 							img="https://images.unsplash.com/photo-1471439330580-1493ebc92c13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
 						</Project>
-					{/* </div>
-					<div className="main__row row"> */}
 						<Project
 							title="20 years of web"
 							desc="An interactive platform and exhibition of 20 years of web"

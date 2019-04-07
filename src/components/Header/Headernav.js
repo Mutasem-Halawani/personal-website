@@ -1,8 +1,11 @@
 import React from "react"
+import Texture from '../Texture'
 
 function Headernav(props) {
   return (
 		<div className="nav-container">
+			<Texture>
+			</Texture>
 			<nav className="nav header-nav container">
 				<a className="nav__link link logo-wrapper" href="#intro">
 					<h1>

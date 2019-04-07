@@ -1,21 +1,5 @@
 import React from "react"
-import Lines from "react-svg-textures/es/Paths"
-
-const Texture = () => (
-  <svg className="svg">
-    <Lines
-      id='footerPattern'
-      d='woven'
-      stroke='gray'
-      strokeWidth={2}
-      orientation='vertical'
-      size={7}
-      shapeRendering='circle'
-      background='black'
-    />
-    <circle cx='50%' cy='90%' r='100%' fill='url(#footerPattern)' />
-  </svg>
-);
+import Texture from './Texture'
 
 function Footer(props) {
   return (

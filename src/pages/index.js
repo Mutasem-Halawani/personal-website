@@ -1,6 +1,6 @@
 import React from "react"
-import Header from '../components/Header'
-import Headernav from '../components/Headernav'
+import Header from '../components/Header/Header'
+import Headernav from '../components/Header/Headernav'
 import Main from '../components/Main/Main'
 import Footer from '../components/Footer'
 // TODO: replace font awesome for production
