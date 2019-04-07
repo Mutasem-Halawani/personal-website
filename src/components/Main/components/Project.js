@@ -15,7 +15,9 @@ class Project extends React.Component {
 						</p>
 						<a target="_blank" className="article__link link link--project" href={this.props.website}>
 							Visit Website
-							<i className="icon fa fa-angle-right"></i>
+							<span className="arrow">
+								<i className="icon fa fa-angle-right"></i>
+							</span>
 						</a>
 					</div>
 			</article>

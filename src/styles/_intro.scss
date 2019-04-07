@@ -20,7 +20,7 @@
     
       &__input {
         background: transparent;
-        border: 2px solid $color-text;
+        border: $border-width solid $color-text;
         color: $color-text;
         width: 100%;
         outline: none;

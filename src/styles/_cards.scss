@@ -24,6 +24,19 @@
   
     &__link {
       color: $color-text;
+
+      .arrow {
+        transition: all 0.1s;
+        text-decoration: none !important;
+      }
+
+
+      &:hover {
+        & .arrow {
+          transform: translate3d(20%, 0, 0);
+        }
+      }
+
     }
   
     &:before {
@@ -80,7 +93,7 @@
             transform: translate3d(0,-30%,0);
         }
       }
-  
+
       .article__wrapper--on-hover {
         opacity: 1;
         transform: translate3d(0,-20%,0);

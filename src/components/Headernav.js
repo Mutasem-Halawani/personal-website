@@ -5,7 +5,9 @@ function Headernav(props) {
 		<div className="nav-container">
 			<nav className="nav header-nav container">
 				<a className="nav__link link logo-wrapper" href="#intro">
-					<img className="logo" alt="logo" src="https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg"/>
+					<h1>
+						M
+					</h1>
 				</a>
 				<div className="nav__wrapper">
 					<a className="nav__link box-effect link" href="#about">

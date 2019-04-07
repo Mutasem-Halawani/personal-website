@@ -31,6 +31,10 @@
         @include mobile {
             flex-direction: column-reverse;
         }
+
+        p {
+          font-size: 1rem;
+        }
       }
   
       .nav__link {
