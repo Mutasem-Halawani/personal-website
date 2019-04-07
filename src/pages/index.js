@@ -4,6 +4,7 @@ import Headernav from '../components/Header/Headernav'
 import Main from '../components/Main/Main'
 import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet'
+
 // TODO: replace font awesome for production
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIgloo } from '@fortawesome/free-solid-svg-icons'
@@ -18,6 +19,7 @@ export default () => (
     <title>Motasem Halawni</title>
     {/* TODO: SWITCH LINK LATER */}
     <link rel="canonical" href="https://agitated-goldberg-3352d4.netlify.com/" />
+
   </Helmet>
     <Headernav>
     </Headernav>
@@ -27,6 +29,7 @@ export default () => (
     </Main>
     <Footer>
     </Footer>
+
   </div>
 )
 

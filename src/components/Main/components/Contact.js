@@ -1,9 +1,11 @@
 import React from "react"
+import Zoom from 'react-reveal/Zoom'
 
 function Work(props) {
   return (
 	  <div className="contact-container">
 		<section className="main__section container" id="contact">
+		<Zoom>
 			<h3>
 				Get in touch
 			</h3>
@@ -21,6 +23,7 @@ function Work(props) {
 					Send
 				</button>
 			</form>
+			</Zoom>
 		</section>
 	</div>
   )
