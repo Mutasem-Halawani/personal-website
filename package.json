@@ -1,6 +1,7 @@
 {
   "name": "motasem-personal-website",
   "private": true,
+  "author": "mtsmha@gmail.com",
   "description": "Personal Website build using Gatspy",
   "version": "0.1.0",
   "license": "MIT",

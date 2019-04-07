@@ -2,14 +2,6 @@ import React from "react"
 import Project from './Project'
 
 class Work extends React.Component {
-	
-	mouseEnter = () => {
-		this.setState({ isMouseInside: true });
-	}
-
-	mouseLeave = () => {
-		this.setState({ isMouseInside: false });
-	}
 
 	render(){
 		return (

@@ -4,17 +4,62 @@
     position: relative;
     padding: 1rem;
     justify-content: center;
-    border-radius: $radious-project;
     height: 20rem;
     color: $color-text;
-    background: $gradient; 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin-bottom: 1.5rem;
+    z-index: 1;
+    border-radius: $radius-project;
+
+    &:hover {
+      &::after {
+        transform: translate3d(0,23%,0);
+        @include mobile {
+            transform: translate3d(0,-30%,0);
+        }
+      }
+
+      .article__wrapper--on-hover {
+        opacity: 1;
+        transform: translate3d(0,-20%,0);
+        @include mobile {
+            transform: translate3d(0,-30%,0);
+        }
+      }
+    }
+    
+    &__container {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      border-radius: $radius-project;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 18px;
+        background-image: $gradient;
+        opacity: .6; 
+        border-radius: $radius-project;
+      }
+    }
+
+    &__img {
+      border-radius: $radius-project;
+      max-width: 700px;
+      margin: 0 1rem !important;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      border-radius: $radius-project;
+      transition: opacity 0.35s;
+    }
     
     @include mobile {
-        margin-bottom: 1rem;
+      margin-bottom: 1rem;
     }
   
     &__title {
@@ -39,29 +84,6 @@
 
     }
   
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-image: $gradient;
-      opacity: .4; 
-    }
-  
-    &__img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: $radious-project;
-      transition: opacity 0.35s;
-    }
-  
     &__wrapper {
       text-align: center;
       z-index: 2;
@@ -83,28 +105,6 @@
     &__desc {
       color: $color-text;
       padding-bottom: 0.5rem;
-    }
-
-  
-    &:hover {
-      &::after {
-        transform: translate3d(0,23%,0);
-        @include mobile {
-            transform: translate3d(0,-30%,0);
-        }
-      }
-
-      .article__wrapper--on-hover {
-        opacity: 1;
-        transform: translate3d(0,-20%,0);
-        @include mobile {
-            transform: translate3d(0,-30%,0);
-        }
-      }
-  
-      .article__img {
-        opacity: 0.2;
-      }
     }
 
   }
