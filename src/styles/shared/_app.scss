@@ -3,6 +3,10 @@
     // width: 1200px;
     margin: 0 auto;
 }
+
+.d-none {
+    display: none;
+}
   
 .svg {
     width: 100%;
@@ -19,6 +23,10 @@
         position: relative;
         z-index: 1;
         padding: 6rem 2rem 0 2rem;
+        
+        @include mobile {
+            padding: 2rem;
+        }
 
         &__wrapper {
             padding: 0.5rem 0;
