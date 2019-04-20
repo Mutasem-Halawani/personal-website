@@ -8,7 +8,7 @@ class Headernav extends React.Component {
 		super(props);
 		this.state = {
 			isActive: false,
-			isMobile: window.innerWidth < 768
+			isMobile: null
 		};
 
 		this.toggle = this.toggle.bind(this);
@@ -16,6 +16,11 @@ class Headernav extends React.Component {
 
 	toggle() {
 		this.setState({ isActive: !this.state.isActive })
+	}
+
+	componentDidMount() {
+		this.setState({ isMobile: window.innerWidth < 768 })
+
 	}
 
 	render() {
