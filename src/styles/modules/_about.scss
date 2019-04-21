@@ -16,7 +16,13 @@
     }
 
     .p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin: 1.5rem 0 !important;
+
+        @include mobile {
+            &:first-child {
+                margin-top: 0 !important;
+            }
+        }
     }
 }

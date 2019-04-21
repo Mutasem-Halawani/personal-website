@@ -41,6 +41,11 @@
       &__input-wrapper {
         display: flex;
 
+
+        @include mobile {
+          flex-direction: column;
+        }
+
         input {
           width: 50%;
           background: transparent;
@@ -54,6 +59,11 @@
 
           &:last-child {
             margin-left: 0.5rem;
+          }
+
+          @include mobile {
+            width: 100%;
+            margin: 1rem 0 0 0 !important;
           }
         }
       }

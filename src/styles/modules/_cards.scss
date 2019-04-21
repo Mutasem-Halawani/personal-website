@@ -42,6 +42,10 @@
         background-image: $gradient;
         opacity: .6; 
         border-radius: $radius-project;
+
+        @include mobile {
+          left: 0;
+        }
       }
     }
 
@@ -56,12 +60,12 @@
       bottom: 0;
       border-radius: $radius-project;
       transition: opacity 0.35s;
+
+      @include mobile {
+        margin: 0 !important;
+      }
     }
     
-    @include mobile {
-      margin-bottom: 1rem;
-    }
-  
     &__title {
       position: relative;
       z-index: 1;
