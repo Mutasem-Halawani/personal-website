@@ -2,6 +2,8 @@ import React from "react"
 import Texture from '../Texture'
 import MediaQuery from 'react-responsive'
 
+const mobileWidth = 768
+
 class Headernav extends React.Component {
 
 	constructor(props) {
@@ -19,7 +21,7 @@ class Headernav extends React.Component {
 	}
 
 	componentDidMount() {
-		this.setState({ isMobile: window.innerWidth < 768 })
+		this.setState({ isMobile: window.innerWidth < mobileWidth })
 
 	}
 
@@ -27,7 +29,7 @@ class Headernav extends React.Component {
 		return (
 			<div>
 				<div className={`nav-container ${!this.state.isActive && this.state.isMobile ? 'd-none' : ''}`}>
-					<MediaQuery minWidth={769}>
+					<MediaQuery minWidth={mobileWidth}>
 						<Texture>
 						</Texture>
 					</MediaQuery>
@@ -50,7 +52,7 @@ class Headernav extends React.Component {
 						</div>
 					</nav>
 				</div>
-				<MediaQuery maxWidth={768}>
+				<MediaQuery maxWidth={mobileWidth - 1}>
 					<button onClick={this.toggle} className={`hamburger hamburger--squeeze ${this.state.isActive ? 'is-active hamburger' : ''}" type="button`}>
 						<span className="hamburger-box">
 							<span className="hamburger-inner"></span>

@@ -1,6 +1,5 @@
 
 .app {
-    // width: 1200px;
     margin: 0 auto;
 }
 
@@ -29,7 +28,7 @@
         }
 
         @include tablet {
-            padding: 2rem;
+            padding: 3rem;
         }
 
         &__wrapper {
