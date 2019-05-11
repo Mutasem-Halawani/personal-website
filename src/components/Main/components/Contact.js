@@ -1,11 +1,11 @@
 import React from "react"
-import Zoom from 'react-reveal/Zoom'
+// import Zoom from 'react-reveal/Zoom'
 
 function Work(props) {
   return (
 	  <div className="contact-container">
 		<section className="main__section container" id="contact">
-		<Zoom>
+		{/* <Zoom> */}
 			<h3>
 				Get in touch
 			</h3>
@@ -13,7 +13,6 @@ function Work(props) {
 				Message me! Let's turn ideas into reality, and build great products!
 			</p>
 			<form
-				netlify
 				name="contact"
 				method="POST"
 				data-netlify="true"
@@ -38,7 +37,7 @@ function Work(props) {
 					Send
 				</button>
 			</form>
-			</Zoom>
+			{/* </Zoom> */}
 		</section>
 	</div>
   )
