@@ -10,7 +10,7 @@ function Work(props) {
 				Get in touch
 			</h3>
 			<p className="text">
-				Message me! Let's turn ideas into reality, and build great things!
+				Message me! Let's turn ideas into reality, and build great products!
 			</p>
 			<form className="form">
 				<div className="form__input-wrapper">

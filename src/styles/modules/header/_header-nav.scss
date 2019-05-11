@@ -3,7 +3,7 @@
     z-index: 1;
 
     @include tablet {
-        margin: 0;
+        margin-left: 0;
     }
 
     @include mobile {

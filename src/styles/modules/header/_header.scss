@@ -11,10 +11,6 @@
     .header-nav {
   
       .logo-wrapper {
-        display: flex;
-        align-self: center;
-        padding: 0 !important;
-  
         .logo {
           width: 50px;
           height: 50px;
@@ -25,4 +21,6 @@
 
 .header-wrapper {
   overflow: hidden;
+  background: url("../../static/DSC03786.jpg") center center no-repeat;
+  background-size: cover;
 }

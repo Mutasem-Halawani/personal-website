@@ -4,6 +4,10 @@
     }
     .separator {
         height: 5rem;
+
+        @include tablet {
+            height: 1rem;
+        }
     }
 }
 

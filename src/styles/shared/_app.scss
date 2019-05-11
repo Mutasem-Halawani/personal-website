@@ -28,6 +28,10 @@
             padding: 1rem;
         }
 
+        @include tablet {
+            padding: 2rem;
+        }
+
         &__wrapper {
             padding: 0.5rem 0;
         }

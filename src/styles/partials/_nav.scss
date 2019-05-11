@@ -2,8 +2,9 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     top: 0;
-    padding: 1rem 2rem;
+    height: 100%;
     z-index: 3;
   
     &__wrapper {
@@ -14,9 +15,9 @@
       margin: 0 0.5rem;
       color: $color-text;
   
-      &:first-child {
-        margin-left: 0;
-      }
+      // &:first-child {
+      //   margin-left: 0;
+      // }
       
       &:last-child {
         margin-right: 0;

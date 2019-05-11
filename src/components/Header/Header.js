@@ -12,7 +12,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header-wrapper">
-        <img alt="motasem-halawani-intro-background" className="header__img" src="../../../DSC03786.jpg" />
+        {/* <img alt="motasem-halawani-intro-background" className="header__img" src="../../../DSC03786.jpg" /> */}
         <header className="header container">
           <div className="header__welcome">
             <Typed
@@ -26,7 +26,7 @@ class Header extends React.Component {
               strings={[
                 'Developer',
                 'Entrepreneur',
-                'Online Marketer'
+                // 'Online Marketer'
               ]}
               startDelay={this.state.delay}
               typeSpeed={60}
