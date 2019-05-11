@@ -12,7 +12,8 @@
     justify-content:center;
 
     @include mobile {
-        height: auto;
+      height: auto;
+      padding: 2rem 0;
     }
 
     .text {
