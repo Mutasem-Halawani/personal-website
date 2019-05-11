@@ -6,7 +6,7 @@ import React from "react"
 function encode(data) {
 	return Object.keys(data)
 	  .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-	  .join("&");
+	  .join("&")
 }
 
 class Work extends React.Component {
@@ -22,14 +22,10 @@ class Work extends React.Component {
 
 	handleSubmit = e => {
 		e.preventDefault()
-		const form = e.target
 		fetch("/", {
 		  method: "POST",
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
-		  body: encode({
-			"form-name": form.getAttribute("name"),
-			...this.state
-		  })
+		  body: encode({ 'form-name': 'contact', ...this.state })
 		})
 		// .then(() => navigateTo(form.getAttribute("action")))
 		.then(() => console.log('SUCCESS'))
