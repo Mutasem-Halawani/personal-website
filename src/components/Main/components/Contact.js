@@ -16,7 +16,6 @@ function Work(props) {
 				name="contact"
 				method="POST"
 				data-netlify="true"
-				action="/"
 				className="form">
 				<div className="form__input-wrapper">
 					<label htmlFor="name">
