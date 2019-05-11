@@ -15,8 +15,8 @@ export default () => (
   <div id="intro" className="app">
   <Helmet>
     <meta charSet="utf-8" />
-    <meta name="description" content="Motasem Halawni Personal Website" />
-    <title>Motasem Halawni</title>
+    <meta name="description" content="Motasem Halawani Personal Website" />
+    <title>Motasem Halawani</title>
     <link rel="canonical" href="https://mtsm.io" />
 
   </Helmet>
