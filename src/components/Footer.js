@@ -1,11 +1,11 @@
 import React from "react"
-import Texture from './Texture'
+import { TextureFooter } from './Texture'
 
 function Footer(props) {
   return (
     <div className="footer-wrapper">
-      <Texture>
-      </Texture>
+      <TextureFooter>
+      </TextureFooter>
       <footer className="footer">
         <div className="footer__wrapper container">
           <p>

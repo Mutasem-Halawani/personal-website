@@ -1,5 +1,5 @@
 import React from "react"
-import Texture from '../Texture'
+import { TextureHeader } from '../Texture'
 import MediaQuery from 'react-responsive'
 
 const mobileWidth = 768
@@ -30,8 +30,8 @@ class Headernav extends React.Component {
 			<div>
 				<div className={`nav-container ${!this.state.isActive && this.state.isMobile ? 'd-none' : ''}`}>
 					<MediaQuery minWidth={mobileWidth}>
-						<Texture>
-						</Texture>
+						<TextureHeader>
+						</TextureHeader>
 					</MediaQuery>
 					<nav className="nav header-nav container">
 						<a onClick={this.toggle} className="nav__link link logo-wrapper" href="#intro">

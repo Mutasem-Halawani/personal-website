@@ -17,8 +17,7 @@ export default () => (
     <meta charSet="utf-8" />
     <meta name="description" content="Motasem Halawni Personal Website" />
     <title>Motasem Halawni</title>
-    {/* TODO: SWITCH LINK LATER */}
-    <link rel="canonical" href="https://agitated-goldberg-3352d4.netlify.com/" />
+    <link rel="canonical" href="https://mtsm.io" />
 
   </Helmet>
     <Headernav>
