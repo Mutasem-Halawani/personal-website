@@ -11,13 +11,18 @@ function encode(data) {
 
 class Work extends React.Component {
 
+	constructor(props) {
+		super(props);
+		this.state = { name: "", email: "", message: "" };
+	}
+
 	handleChange = e => {
 		this.setState({ [e.target.name]: e.target.value })
 	}
 
 	handleSubmit = e => {
-		e.preventDefault();
-		const form = e.target;
+		e.preventDefault()
+		const form = e.target
 		fetch("/", {
 		  method: "POST",
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -32,6 +37,7 @@ class Work extends React.Component {
 	}
 
 	render() {
+		const { name, email, message } = this.state;
 		return (
 			<div className="contact-container">
 			  <section className="main__section container" id="contact">
@@ -54,16 +60,16 @@ class Work extends React.Component {
 						  <label htmlFor="name">
 							  Name
 						  </label>
-						  <input id="name" type="text" name="name" placeholder="name"  onChange={this.handleChange}/>
+						  <input id="name" value={name} type="text" name="name" placeholder="name"  onChange={this.handleChange}/>
 						  <label htmlFor="email">
 							  Email
 						  </label>
-						  <input id="email" type="email" name="email" placeholder="email"  onChange={this.handleChange}/>
+						  <input id="email" value={email} type="email" name="email" placeholder="email"  onChange={this.handleChange}/>
 					  </div>
 					  <label htmlFor="message">
 						  Message
 					  </label>
-					  <textarea id="message" placeholder="message" name="message" rows="4"  onChange={this.handleChange}>
+					  <textarea id="message" value={message} placeholder="message" name="message" rows="4"  onChange={this.handleChange}>
 					  </textarea>
 					  <button type="submit" aria-label="send message" className="btn box-effect" onClick={this.handleSubmit}>
 						  Send
