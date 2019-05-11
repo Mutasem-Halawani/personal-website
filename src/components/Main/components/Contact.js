@@ -12,7 +12,11 @@ function Work(props) {
 			<p className="text">
 				Message me! Let's turn ideas into reality, and build great products!
 			</p>
-			<form className="form">
+			<form 
+				name="contact"
+				method="POST"
+				data-netlify="true"
+				className="form">
 				<div className="form__input-wrapper">
 					<label htmlFor="name">
 						Name
