@@ -47,6 +47,7 @@ class Work extends React.Component {
 					  name="contact"
 					  method="post"
 					  data-netlify="true"
+					  data-netlify-honeypot="bot-field"
 					  className="form"
 					  action="/"
 					  onSubmit={this.handleSubmit}>
