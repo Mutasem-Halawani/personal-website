@@ -28,7 +28,6 @@ export default () => (
     </Main>
     <Footer>
     </Footer>
-
   </div>
 )
 
