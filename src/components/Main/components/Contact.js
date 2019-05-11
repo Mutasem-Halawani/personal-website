@@ -14,12 +14,21 @@ function Work(props) {
 			</p>
 			<form className="form">
 				<div className="form__input-wrapper">
-					<input type="text" placeholder="name"/>
-					<input type="email" placeholder="email"/>
+					<label htmlFor="name">
+						Name
+					</label>
+					<input id="name" type="text" name="name" placeholder="name"/>
+					<label htmlFor="email">
+						Email
+					</label>
+					<input id="email" type="email" name="email" placeholder="email"/>
 				</div>
-				<textarea placeholder="message" rows="4">
+				<label htmlFor="message">
+					Message
+				</label>
+				<textarea id="message" placeholder="message" name="message" rows="4">
 				</textarea>
-				<button className="btn box-effect">
+				<button type="submit" aria-label="send message" className="btn box-effect">
 					Send
 				</button>
 			</form>

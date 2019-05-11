@@ -15,6 +15,9 @@ class Header extends React.Component {
         {/* <img alt="motasem-halawani-intro-background" className="header__img" src="../../../DSC03786.jpg" /> */}
         <header className="header container">
           <div className="header__welcome">
+            <label htmlFor="developer">
+              Developer, Entrepreneur
+            </label>
             <Typed
               strings={['Motasem']}
               typeSpeed={70}
@@ -34,7 +37,7 @@ class Header extends React.Component {
               showCursor={false}
               attr="placeholder"
               loop >
-              <input className="header__input" type="text" />
+              <input id="developer" className="header__input" type="text" />
             </Typed>
           </div>
         </header>

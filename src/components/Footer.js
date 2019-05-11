@@ -11,6 +11,7 @@ function Footer(props) {
           <p>
             Built using
             <a 
+              aria-label="Gatsby"
               target="_blank"
               rel="noopener noreferrer"
               className="footer__link link" 
@@ -20,6 +21,7 @@ function Footer(props) {
           </p>
           <nav className="nav footer__nav">
             <a 
+              aria-label="Github"
               target="_blank"
               rel="noopener noreferrer"
               className="nav__link" 
@@ -27,6 +29,7 @@ function Footer(props) {
                 <i className="icon fab fa-github"></i>
             </a>
             <a 
+              aria-label="Linkedin"
               target="_blank"
               rel="noopener noreferrer"
               className="nav__link" 
@@ -34,6 +37,7 @@ function Footer(props) {
                 <i className="icon fab fa-linkedin-in"></i>
             </a>
             <a 
+              aria-label="Twitter"
               target="_blank"
               rel="noopener noreferrer"
               className="nav__link" 
@@ -41,6 +45,7 @@ function Footer(props) {
                 <i className="icon fab fa-twitter"></i>
             </a>
             <a 
+              aria-label="Email"
               target="_blank"
               rel="noopener noreferrer"
               className="nav__link" 

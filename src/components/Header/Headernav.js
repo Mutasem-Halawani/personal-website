@@ -53,7 +53,7 @@ class Headernav extends React.Component {
 					</nav>
 				</div>
 				<MediaQuery maxWidth={mobileWidth - 1}>
-					<button onClick={this.toggle} className={`hamburger hamburger--squeeze ${this.state.isActive ? 'is-active hamburger' : ''}" type="button`}>
+					<button aria-label="open menu" onClick={this.toggle} className={`hamburger hamburger--squeeze ${this.state.isActive ? 'is-active hamburger' : ''}" type="button`}>
 						<span className="hamburger-box">
 							<span className="hamburger-inner"></span>
 						</span>
