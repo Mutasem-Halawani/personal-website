@@ -1,6 +1,6 @@
 import React from "react"
 // import Zoom from 'react-reveal/Zoom'
-import { navigate } from 'gatsby-link'
+// import { navigate } from 'gatsby-link'
 
 
 function encode(data) {
@@ -27,7 +27,7 @@ class Work extends React.Component {
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
 		  body: encode({ 'form-name': 'contact', ...this.state })
 		})
-		.then(() => navigate('/'))
+		// .then(() => navigate('/'))
 		.catch(error => alert(error))
 	}
 
@@ -49,7 +49,6 @@ class Work extends React.Component {
 					  data-netlify="true"
 					  data-netlify-honeypot="bot-field"
 					  className="form"
-					  action="/"
 					  onSubmit={this.handleSubmit}>
 					   <input type="hidden" name="form-name" value="contact" />
 					  <div className="form__input-wrapper">
