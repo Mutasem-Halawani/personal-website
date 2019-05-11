@@ -1,5 +1,5 @@
 import React from "react"
-// import Zoom from 'react-reveal/Zoom'
+import Zoom from 'react-reveal/Zoom'
 // import { navigate } from 'gatsby-link'
 
 
@@ -36,12 +36,12 @@ class Work extends React.Component {
 		return (
 			<div className="contact-container">
 			  <section className="main__section container" id="contact">
-			  {/* <Zoom> */}
+			  <Zoom>
 				  <h3>
-					  Get in touch
+					Get in touch
 				  </h3>
 				  <p className="text">
-					  Message me! Let's turn ideas into reality, and build great products!
+					Message me! Let's turn ideas into reality, and build great products!
 				  </p>
 				  <form
 					  name="contact"
@@ -70,7 +70,7 @@ class Work extends React.Component {
 						  Send
 					  </button>
 				  </form>
-				  {/* </Zoom> */}
+				  </Zoom>
 			  </section>
 		  </div>
 		)
