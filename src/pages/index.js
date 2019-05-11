@@ -18,7 +18,7 @@ export default () => (
     <meta name="description" content="Motasem Halawani Personal Website" />
     <title>Motasem Halawani</title>
     <link rel="canonical" href="https://mtsm.io" />
-
+    <meta name="google-site-verification" content="jzmerGH9oJ26c3PpKqGDumkKPQ6vZRZLeDU449037Ko" />
   </Helmet>
     <Headernav>
     </Headernav>
