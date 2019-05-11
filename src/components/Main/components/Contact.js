@@ -1,6 +1,6 @@
 import React from "react"
 // import Zoom from 'react-reveal/Zoom'
-// import { navigate } from 'gatsby-link'
+import { navigate } from 'gatsby-link'
 
 
 function encode(data) {
@@ -27,9 +27,8 @@ class Work extends React.Component {
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
 		  body: encode({ 'form-name': 'contact', ...this.state })
 		})
-		// .then(() => navigateTo(form.getAttribute("action")))
-		.then(() => console.log('SUCCESS'))
-		.catch(error => alert(error));
+		.then(() => navigate('/'))
+		.catch(error => alert(error))
 	}
 
 	render() {
