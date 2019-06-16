@@ -3,7 +3,7 @@
   "private": true,
   "author": "mtsmha@gmail.com",
   "description": "Personal Website build using Gatspy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

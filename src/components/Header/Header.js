@@ -12,11 +12,10 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header-wrapper">
-        {/* <img alt="motasem-halawani-intro-background" className="header__img" src="../../../DSC03786.jpg" /> */}
         <header className="header container">
           <div className="header__welcome">
             <label htmlFor="developer">
-              Developer, Entrepreneur
+              Developer, Doer, Builder
             </label>
             <Typed
               strings={['Motasem']}
@@ -28,8 +27,8 @@ class Header extends React.Component {
             <Typed
               strings={[
                 'Developer',
-                'Entrepreneur',
-                // 'Online Marketer'
+                'Doer',
+                'Builder',
               ]}
               startDelay={this.state.delay}
               typeSpeed={60}
@@ -45,7 +44,5 @@ class Header extends React.Component {
     )
   }
 }
-
-
 
 export default Header

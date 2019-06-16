@@ -8,7 +8,7 @@ function About(props) {
 			<div className="main__section__wrapper">
 			<Zoom>
 				<p className="p">	
-					Hi! My name is Motasem Halawani. Born and raised in Jerusalem, I studied business administration and  worked in marketing - after which I discovered my passion for coding. For the past 3 years I’ve been playing with code and working professionally as developer. I am passionate about new technologies and give a great deal for performance and accessibility. I strive to build things that will have a large and positive effect on people’s life.
+					Hi! My name is Motasem Halawani. Born and raised in Jerusalem, I studied business administration and  worked in marketing - after which I discovered my passion for coding. For the past 3 years I’ve been experimenting with code and working professionally as developer. I am passionate about new technologies and give a great deal for performance and accessibility. I strive to build things that will have a large and positive effect on people’s life.
 				</p>	
 			</Zoom>
 				<Zoom>

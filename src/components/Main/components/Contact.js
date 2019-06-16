@@ -1,7 +1,5 @@
 import React from "react"
 import Zoom from 'react-reveal/Zoom'
-// import { navigate } from 'gatsby-link'
-
 
 function encode(data) {
 	return Object.keys(data)
@@ -26,9 +24,7 @@ class Work extends React.Component {
 		  method: "POST",
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
 		  body: encode({ 'form-name': 'contact', ...this.state })
-		})
-		// .then(() => navigate('/'))
-		.catch(error => alert(error))
+		}).catch(error => alert(error))
 	}
 
 	render() {
