@@ -15,7 +15,7 @@ class Header extends React.Component {
         <header className="header container">
           <div className="header__welcome">
             <label htmlFor="developer">
-              Developer, Doer, Builder
+              Developer
             </label>
             <Typed
               strings={['Motasem']}
@@ -26,9 +26,7 @@ class Header extends React.Component {
             />
             <Typed
               strings={[
-                'Developer',
-                'Doer',
-                'Builder',
+                'Developer'
               ]}
               startDelay={this.state.delay}
               typeSpeed={60}
