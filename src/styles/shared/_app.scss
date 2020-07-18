@@ -6,7 +6,7 @@
 .d-none {
     display: none;
 }
-  
+
 .svg {
     width: 100%;
     height: 100%;
@@ -16,13 +16,13 @@
     top: 0;
     bottom: 0;
 }
-  
+
 .main {
     &__section {
         position: relative;
         z-index: 1;
-        padding: 6rem 2rem 0 2rem;
-        
+        padding: 0 2rem;
+
         @include mobile {
             padding: 1rem;
         }
